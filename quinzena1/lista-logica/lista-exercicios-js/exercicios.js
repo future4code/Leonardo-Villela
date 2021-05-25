@@ -128,12 +128,6 @@ function checaRenovacaoRG() {
   let idade2 = idade <= 50 && idade >=20
 
   console.log((idade1 && tempCart >= 5) || (idade2 && tempCart > 10) || (tempCart > 15))
-  
-
-  // console.log(((idade <= 20) && (tempCart >= 5)) || ((idade <= 50 ) && (idade >= 20) && (tempCart > 10)) || ((tempCart > 15) ))
-  
-
-
 }
 
 // Exercício 11
