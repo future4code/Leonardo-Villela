@@ -47,7 +47,7 @@ console.log("A sobra é", divisaoSobra)
 let idade = Number(prompt("Qual a sua idade? "))
 
 let idadeMeses = idade * 12
-let idadeDias = idadeMeses * 365
+let idadeDias = idade * 365
 let idadeHoras = idadeDias * 24
 
 console.log("A idade do usuário é", idade, "anos", "Em meses é", idadeMeses, ". Em dias é ", idadeDias, ". Em horas é ", idadeHoras, "horas." )
