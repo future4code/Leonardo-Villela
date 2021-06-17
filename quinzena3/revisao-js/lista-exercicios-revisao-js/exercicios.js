@@ -7,7 +7,15 @@ function inverteArray(array) {
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
 
+  const newArray = []
+  for(valor of array){
+    if(valor % 2 === 0){
+      const numeroAoQuadrado = valor * valor
+      newArray.push(numeroAoQuadrado)
+    }
+  }
 
+  return newArray
 
 }
 
