@@ -1,15 +1,17 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
 
-
+  const arrayInvertido = array.map((valor, i) =>
+    array[array.length - i - 1])
+  return arrayInvertido
 }
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
 
   const newArray = []
-  for(valor of array){
-    if(valor % 2 === 0){
+  for (valor of array) {
+    if (valor % 2 === 0) {
       const numeroAoQuadrado = valor * valor
       newArray.push(numeroAoQuadrado)
     }
