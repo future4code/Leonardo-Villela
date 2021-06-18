@@ -8,7 +8,7 @@ function inverteArray(array) {
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-
+  
   const newArray = []
   for (valor of array) {
     if (valor % 2 === 0) {
@@ -36,6 +36,15 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
+
+  let maior = 0
+
+  for(let valor of array){
+    if(valor > maior){
+      maior = valor 
+    }
+  }
+  return maior
 
 }
 
