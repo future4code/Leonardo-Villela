@@ -104,11 +104,11 @@ function checaTriangulo(a, b, c) {
   // return 'Equilátero'
   // return 'Isósceles'
 
-  if(a !== b && b !== c && a !== c){
+  if (a !== b && b !== c && a !== c) {
     return "Escaleno"
-  } else if ((a === b && a !== c)  || (b === c && b !== a) || (a === c && c !== b)){
+  } else if ((a === b && a !== c) || (b === c && b !== a) || (a === c && c !== b)) {
     return "Isósceles"
-  } else { 
+  } else {
     return "Equilátero"
   }
 
@@ -126,18 +126,18 @@ function comparaDoisNumeros(num1, num2) {
   // }
 
   let resposta = {}
-    
-  if(num1 > num2){
-    resposta.maiorNumero = num1 
+
+  if (num1 > num2) {
+    resposta.maiorNumero = num1
     const divisivel = num1 % num2 === 0
     resposta.maiorDivisivelPorMenor = divisivel
     resposta.diferenca = num1 - num2
-  } else if(num2 > num1){
+  } else if (num2 > num1) {
     resposta.maiorNumero = num2
     const divisivel = num2 % num1 === 0
     resposta.maiorDivisivelPorMenor = divisivel
     resposta.diferenca = num2 - num1
-  } else{
+  } else {
     resposta.maiorNumero = num2
     resposta.maiorDivisivelPorMenor = true
     resposta.diferenca = num2 - num1
@@ -148,11 +148,70 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
+  
+  let segundoMaiorEMenor = []
+
+  let segundoMaior
+  let segundoMenor
+  let maior = 0
+  let menor = 11110
+  
+  for (let i = 0; i < array.length; i++) {
+    
+    if (array[i + 1] > maior && array[i] < array[i + 1]){
+      maior = array[i + 1]
+      segundoMaior = array[i]
+      // menor = array[i] 
+      // segundoMenor = array[i + 1]   
+  } else if(array[i] > maior && array[i] > array[i + 1]){
+    maior = array[i]
+    segundoMaior = array[i + 1]
+  }
+    
+    if(array[i] < menor && array[i] < array[i + 1]){
+      menor = array[i] 
+      segundoMenor = array[i + 1]
+    }
+
+     
+  } 
+  
+segundoMaiorEMenor.push(segundoMaior)
+segundoMaiorEMenor.push(segundoMenor)
+return segundoMaiorEMenor
 
 }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
+
+  let bubbleSort = (array) => {
+    let len = array.length;
+    let checked;
+    do {
+        checked = false;
+        for (let i = 0; i < len; i++) {
+            if (array[i] > array[i + 1]) {
+                let tmp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = tmp;
+                checked = true;
+            }
+        }
+    } while (checked);
+    return array;
+ };
+
+ return bubbleSort(array)
+
+  // array.sort((a, b) => {
+  //   if(a > b) return 1
+  //   if(a < b) return -1
+  //   return 0
+  // })
+
+  // return array
+
 
 }
 
