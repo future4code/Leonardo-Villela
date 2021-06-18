@@ -148,37 +148,37 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-  
+
   let segundoMaiorEMenor = []
 
   let segundoMaior
   let segundoMenor
   let maior = 0
   let menor = 11110
-  
+
   for (let i = 0; i < array.length; i++) {
-    
-    if (array[i + 1] > maior && array[i] < array[i + 1]){
+
+    if (array[i + 1] > maior && array[i] < array[i + 1]) {
       maior = array[i + 1]
       segundoMaior = array[i]
       // menor = array[i] 
       // segundoMenor = array[i + 1]   
-  } else if(array[i] > maior && array[i] > array[i + 1]){
-    maior = array[i]
-    segundoMaior = array[i + 1]
-  }
-    
-    if(array[i] < menor && array[i] < array[i + 1]){
-      menor = array[i] 
+    } else if (array[i] > maior && array[i] > array[i + 1]) {
+      maior = array[i]
+      segundoMaior = array[i + 1]
+    }
+
+    if (array[i] < menor && array[i] < array[i + 1]) {
+      menor = array[i]
       segundoMenor = array[i + 1]
     }
 
-     
-  } 
-  
-segundoMaiorEMenor.push(segundoMaior)
-segundoMaiorEMenor.push(segundoMenor)
-return segundoMaiorEMenor
+
+  }
+
+  segundoMaiorEMenor.push(segundoMaior)
+  segundoMaiorEMenor.push(segundoMenor)
+  return segundoMaiorEMenor
 
 }
 
@@ -189,20 +189,20 @@ function ordenaArray(array) {
     let len = array.length;
     let checked;
     do {
-        checked = false;
-        for (let i = 0; i < len; i++) {
-            if (array[i] > array[i + 1]) {
-                let tmp = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = tmp;
-                checked = true;
-            }
+      checked = false;
+      for (let i = 0; i < len; i++) {
+        if (array[i] > array[i + 1]) {
+          let tmp = array[i];
+          array[i] = array[i + 1];
+          array[i + 1] = tmp;
+          checked = true;
         }
+      }
     } while (checked);
     return array;
- };
+  };
 
- return bubbleSort(array)
+  return bubbleSort(array)
 
   // array.sort((a, b) => {
   //   if(a > b) return 1
@@ -218,6 +218,14 @@ function ordenaArray(array) {
 // EXERCÍCIO 12
 function filmeFavorito() {
 
+  const astrodev = {
+    nome: "O Diabo Veste Prada",
+    ano: 2006,
+    diretor: "David Frankel",
+    atores:[ "Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+  }
+
+  return astrodev
 }
 
 // EXERCÍCIO 13
