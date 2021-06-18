@@ -8,7 +8,7 @@ function inverteArray(array) {
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  
+
   const newArray = []
   for (valor of array) {
     if (valor % 2 === 0) {
@@ -39,9 +39,9 @@ function retornaMaiorNumero(array) {
 
   let maior = 0
 
-  for(let valor of array){
-    if(valor > maior){
-      maior = valor 
+  for (let valor of array) {
+    if (valor > maior) {
+      maior = valor
     }
   }
   return maior
@@ -57,6 +57,33 @@ function retornaQuantidadeElementos(array) {
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
 
+  const booleano1 = true
+  const booleano2 = false
+  const booleano3 = !booleano2
+  const booleano4 = !booleano3
+
+  newArray = []
+
+  const adicionarArray = (resposta) => {
+    newArray.push(resposta)
+  }
+
+  const resposta1 = booleano1 && booleano2 && !booleano4
+  adicionarArray(resposta1)
+
+  const resposta2 = (booleano1 && booleano2) || !booleano3
+  adicionarArray(resposta2)
+
+  const resposta3 = (booleano2 || booleano3) && (booleano4 || booleano1)
+  adicionarArray(resposta3)
+
+  const resposta4 = !(booleano2 && booleano3) || !(booleano1 && booleano3)
+  adicionarArray(resposta4)
+
+  const resposta5 = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+  adicionarArray(resposta5)
+
+  return newArray
 }
 
 // EXERCÍCIO 07
