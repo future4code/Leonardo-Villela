@@ -222,7 +222,7 @@ function filmeFavorito() {
     nome: "O Diabo Veste Prada",
     ano: 2006,
     diretor: "David Frankel",
-    atores:[ "Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
   }
 
   return astrodev
@@ -236,7 +236,7 @@ function imprimeChamada() {
     nome: "O Diabo Veste Prada",
     ano: 2006,
     diretor: "David Frankel",
-    atores:[ "Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
   }
 
   return `Venha assistir ao filme ${astrodev.nome}, de ${astrodev.ano}, dirigido por ${astrodev.diretor} e estrelado por ${astrodev.atores[0]}, ${astrodev.atores[1]}, ${astrodev.atores[2]}, ${astrodev.atores[3]}.`
@@ -257,10 +257,10 @@ function criaRetangulo(lado1, lado2) {
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
-    const novaPessoa = {
-      ...pessoa,
-      nome: "ANÔNIMO"
-    }
+  const novaPessoa = {
+    ...pessoa,
+    nome: "ANÔNIMO"
+  }
 
   return novaPessoa
 
@@ -270,10 +270,25 @@ function anonimizaPessoa(pessoa) {
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
 
+  const novoArray = arrayDePessoas.filter((pessoas) => {
+    return pessoas.idade >= 18
+
+  })
+
+  return novoArray
+
+
 }
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
+
+  const novoArray = arrayDePessoas.filter((pessoas) => {
+    return pessoas.idade < 18
+
+  })
+
+  return novoArray
 
 }
 
