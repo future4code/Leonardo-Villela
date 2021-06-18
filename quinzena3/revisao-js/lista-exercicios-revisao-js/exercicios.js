@@ -90,7 +90,7 @@ function retornaExpressoesBooleanas() {
 function retornaNNumerosPares(n) {
 
   let retornarPares = []
-  for(let i = 0; i < n; i++){
+  for (let i = 0; i < n; i++) {
     retornarPares.push(i * 2)
   }
 
@@ -103,6 +103,17 @@ function checaTriangulo(a, b, c) {
   // return 'Escaleno'
   // return 'Equilátero'
   // return 'Isósceles'
+
+  if(a !== b && b !== c && a !== c){
+    return "Escaleno"
+  } else if ((a === b && a !== c)  || (b === c && b !== a) || (a === c && c !== b)){
+    return "Isósceles"
+  } else { 
+    return "Equilátero"
+  }
+
+
+
 }
 
 // EXERCÍCIO 09
