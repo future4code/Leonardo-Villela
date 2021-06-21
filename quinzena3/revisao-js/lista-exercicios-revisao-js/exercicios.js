@@ -295,30 +295,72 @@ function menoresDe18(arrayDePessoas) {
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
 
+  let newArray = array.map((valores) => {
+    return valores * 2
+  })
+
+  return newArray
+
 }
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
+
+  let newArray = array.map((valores) => {
+    return (valores * 2).toString()
+  })
+
+  return newArray
 
 }
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
 
+  let newArray = array.map((valores) => {
+    if (valores % 2 === 0) {
+      return `${valores} é par`
+    } else {
+      return `${valores} é ímpar`
+    }
+  })
+
+  return newArray
+
 }
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
+
+  let newArray = pessoas.filter((pessoa) => {
+    return (pessoa.idade > 14 && pessoa.idade < 60) && (pessoa.altura >= 1.5)
+  })
+
+  return newArray
 
 }
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
 
+  let newArray = pessoas.filter((pessoa) => {
+    return (pessoa.idade <= 14) || (pessoa.idade > 60) || (pessoa.altura <= 1.5)
+  })
+
+  return newArray
+  
+
+ 
+
+  
+
+
 }
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
+  
+  
 
 }
 
