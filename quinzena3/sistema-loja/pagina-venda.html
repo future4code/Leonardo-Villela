@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Página de vendas</title>
+</head>
+
+<body>
+    <div class="nome-pagina">
+        <p class="title">Camisetas Conscientes</p>
+    </div>
+
+    <div class="icones">
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="pagina-venda.html">Página de vendas</a>
+        <a href="historico-vendas.html">Histórico de vendas</a>
+    </div>
+
+    <form action="" class="formulario-vendas">
+
+        <div class="select-pagina-venda">
+            <label for="camisestas">
+                <h1>Escolha a camiseta:</h1>
+            </label>
+
+            <select name="camisetas" id="camisestas" multiple>
+                <option value="Camiseta da América Latina">Camiseta da América Latina</option>
+                <option value="Camiseta Vegan Power escrito">Camiseta Vegan Power escrito</option>
+                <option value="Camiseta Penso, logo existo">Camiseta Penso, logo existo</option>
+                <option value="Camiseta excluisva Revolução dos Bichos">Camiseta excluisva Revolução dos Bichos</option>
+                <option value="Camiseta Ditadura Nunca Mais">Camiseta Ditadura Nunca Mais</option>
+            </select>
+        </div>
+
+        <div class="quantidade-pagina-venda">
+            <label for="quantidade">Quantidade: </label>
+            <input type="number" id="quantidade" name="quantidade">
+        </div>
+
+        <div>
+            <h4>Escolha a forma de pagamento:</h4>
+
+            <input type="radio" id="forma-pagamento" name="forma-pagamento" value="Dinheiro">
+            <label for="forma-pagamento">Dinheiro</label>
+            <input type="radio" id="forma-pagamento" name="forma-pagamento" value="Cartão">
+            <label for="forma-pagamento">Cartão</label>
+        </div>
+
+        <div class="form-add">
+            <button type="submit">Adicionar</button>
+        </div>
+
+
+
+
+    </form>
+
+
+
+
+
+    <div class="rodape">
+        <p>Siga-nos nas redes sociais!</p>
+
+        <div class="imagens-rodape">
+            <img src="https://image.flaticon.com/icons/png/512/25/25305.png" />
+            <img src="https://image.flaticon.com/icons/png/512/25/25425.png" />
+            <img src="https://image.flaticon.com/icons/png/512/8/8800.png" />
+        </div>
+    </div>
+
+
+</body>
+
+</html>
