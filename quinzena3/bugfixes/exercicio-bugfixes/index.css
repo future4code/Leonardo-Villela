@@ -140,6 +140,11 @@ td button:active {
 }
 
 
+.lista-de-compras {
+    margin: 0 auto;
+    width: 50%;
+}
+
 #back-button {
     background-color: white;
     width: 100px;
