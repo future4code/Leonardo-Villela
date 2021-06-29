@@ -76,7 +76,7 @@ div img {
 }
 
 #container-de-descricao>ol {
-    padding: 19px 735px;
+    padding: 15px 760px;
 }
 
 #container-para-comprar {
@@ -103,9 +103,18 @@ div:last-child {
     text-align: center;
 }
 
-.pesquisar>img {
+#icone-pesquisar {
     background-color: white;
     width: 20px;
+}
+
+#icone-pesquisar:hover {
+    opacity: 0.4;
+}
+
+#icone-pesquisar:active {
+    opacity: 1;
+    
 }
 
 table {
