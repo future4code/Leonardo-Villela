@@ -1,0 +1,76 @@
+body {
+    margin: inherit;
+
+}
+.icones{
+    padding: 22px;
+    text-align: center;
+    background-color: #247BA0;
+    margin-top: 1px;
+}
+.icones a{
+    padding: 10px;
+    background-color: #247BA0;
+    font-size: x-large;
+}
+.nome-pagina {
+    background-color: #fb3640;
+    padding: 4%;
+       
+
+}
+
+.title {
+    font-size: xxx-large
+}
+
+main {
+    margin: 66px;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.texto-esquerda {
+    width: 50%;
+}
+
+.Imagem {
+    width: 50%;
+    text-align: center;
+}
+
+.Imagem img{
+    width: 180px;
+}
+
+
+.rodape{
+    padding: 4%;
+    background-color: #1F487E;
+    text-align: center;
+    
+
+}
+
+.imagens-rodape img{
+    text-align: center;
+    display: inline;
+    width: 50px;
+    margin: 15px 28px;
+}
+
+
+.formulario-vendas{
+    margin: 10px;
+    text-align: left;
+}
+
+.quantidade-pagina-venda{
+    margin-top: 30px;
+}
+
+.form-add {
+    margin-top: 25px;
+}
