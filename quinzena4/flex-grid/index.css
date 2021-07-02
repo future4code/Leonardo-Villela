@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Cabeçalho */
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+   
+}
+
+.confeitaria {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.icone-bolinho {
+    width: 20px;
+    
+}
+
+.confeitaria>h2 {
+    padding-left: 21px;
+}
+
+
+
+
+
+
+
+/* Parte central */
+.parte-central{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+.menu-bolos{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;    
+    grid-gap: 20px;
+    margin: 20px;
+    
+}
+
+
+.bolos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px darkgray;
+}
+
+.bolos>p {
+    margin-top: 20px;
+}
+
+.section {
+    align-items: center;
+    align-content: center;
+}
+
+.bolos img{
+    width: 300px;
+    padding: 10px;
+}
+
+.imagem {
+    margin-bottom: 5px ;
+}
+
+
+.menu {
+    background-color: #f2d0e0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;   
+    padding-left: 10px; 
+    text-align: left;
+    padding-top: 20px;
+    
+}
+
+.icone {
+    flex-grow: 0.03;
+}
+
+.imagem-menu {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu>ul>li {
+    margin: 20px;
+}
+
+.icone a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.imagem-setinha{
+    width: 15px;
+    margin-left: 50px;
+}
+
+header, footer {
+    background-color: mediumvioletred;
+}
+
+footer {
+    height: 50px;
+}
+
+
+
+.texto-rodape{
+    text-align: center;
+    align-content: center;
+    
+}
