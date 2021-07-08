@@ -13,11 +13,13 @@ body {
     color: white;
 }
 
+
+
 /* Cabeçalho */
 
 #top-container {
     display: flex;
-    height: 30px;
+    height: 10vh;
     
     
 }
@@ -26,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30%;
     background-color: green;
     
    
@@ -36,7 +38,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
     background-color: yellow;
 }
 
@@ -44,22 +46,61 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 50vh;
     background-color: fuchsia;
+}
+
+#middle-container{
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    
+    
+
+}
+
+#content2{
+    width: 40%;
+    
 }
 
 .blue-background {
     background-color: blue;
+    height: 100%;
+   
 }
 
+#blank {
+    width: 25%;
+    height: 100%;
+    
+}
+
+#vertical-middle-container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+#image, #extra{
+    height: 50%;
+}
 .red-background {
     background-color: red;
+    height: 100%;
+    
 }
 
 .lightgreen-background {
     background-color: lightgreen;
+    height: 100%;
 }
 
 .purple-background {
     background-color: purple;
+    height: 100%;
+}
+
+#footer{
+    height: 15vh;
 }
