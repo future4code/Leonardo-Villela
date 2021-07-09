@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-principal {
+    display: grid;
+   grid-template-rows: 60px 1fr 60px;
+   height: 100vh;
+   width: 100vw;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: bisque;
+    width: 100%;
+    
+}
+
+header .logo {
+    color: blueviolet;
+}
+
+header input {
+    width: 200px;
+    height: 25px;
+    border: solid 3px #ab916987;
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 13px;
+    padding: 5px 40px;
+}
+
+main>div {
+    border: solid 2px rgb(140, 172, 140);
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+main p {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: darkgreen;
+    
+}
+
+main a{
+    text-decoration: none;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 88, 88);
+    height: 60px;
+    width: 100%;
+}
+
+.frase-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Paginas dos vídeos */
+
+
+main2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    padding: 0px;
+    padding-top: 21px;
+    
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Media query */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 667px) {
+
+    .container-principal {
+        width: 100%;
+    }
+
+
+    header {
+        padding: 0;
+        justify-content:space-around;
+    }
+    
+    header input {
+        width: 100px;
+        height: 25px;
+        border: solid 3px #ab916987;
+    }
+
+
+    
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+
+        
+        
+    
+    }
+ 
+    .frase-footer {
+        
+        font-size: small;
+    }
+
+    /* celulares */
+    }
