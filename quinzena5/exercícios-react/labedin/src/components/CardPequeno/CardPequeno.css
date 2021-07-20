@@ -1,0 +1,26 @@
+.cardPequeno-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+.cardPequeno-container > img {
+    width: 40px;
+    margin-right: 10px;
+   
+}
+
+
+.cardPequeno-container > div {
+    display: flex;
+
+}
+
+.cardPequeno-container > div > p {
+    padding-left: 5px
+}
+
